@@ -1,0 +1,18 @@
+/* @theme default-plus */
+/* VSCodeでは、「開いたフォルダー」直下に置くこと！ */
+
+@import 'default';
+
+section:root {
+  padding: 2rem;
+  font: 24px 'Inter', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Source Han Sans', sans-serif;
+}
+
+section:root code {
+  font: 22px / 1.25 'Cica', monospace;
+}
+
+/* https://github.com/marp-team/marpit/issues/271 */
+section:root::after {
+  content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
+}
